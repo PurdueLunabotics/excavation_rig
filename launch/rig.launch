@@ -1,0 +1,4 @@
+<launch>
+  <node name="current_node" type="current_fb_node.py" pkg="excavation_rig" output="screen"/> 
+  <node name="motor_control_node" type="motor_control_node.py" pkg="excavation_rig" output="screen" /> 
+</launch>
