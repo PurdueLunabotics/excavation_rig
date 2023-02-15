@@ -15,11 +15,11 @@ act_ctrl = 0
 
 def act_cb(msg):
     global act_ctrl
-    act_ctrl = msg.data
+    act_ctrl = msg.data # -100 to 100
 
 def exc_cb(msg):
     global exc_ctrl
-    exc_ctrl = msg.data
+    exc_ctrl = msg.data # -100 to 100
 
 class Motor:
     def __init__(self,pwm_p,dir_p):

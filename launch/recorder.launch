@@ -1,0 +1,8 @@
+<launch>
+  <node name="recorder" pkg="rosbag" type="record" args="-a -o $(find excavation_rig)/bags/default_record" output="screen"/>
+ <!-- joy node -->
+  <node respawn="true" pkg="joy" type="joy_node" name="joy" output="screen">
+    <param name="dev" type="string" value="/dev/input/js0" />
+  </node>
+  <node name="manual_control" type="xbox_control.py" pkg="excavation_rig" output="screen"/> 
+</launch>
