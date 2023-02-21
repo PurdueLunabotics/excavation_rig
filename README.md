@@ -1,5 +1,5 @@
 # excavation_rig
-Purdue Lunabotics Excavation Rig
+Purdue Lunabotics Excavation Rig ROS package
 
 Runs on Raspberry PI connected to:
 - H-bridge motor controller controlled via PWM
